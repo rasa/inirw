@@ -1,0 +1,12 @@
+# Microsoft Developer Studio Generated Dependency File, included by inirw.mak
+
+.\inirw.cpp : \
+	".\version.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
+	
+
+.\inirw.rc : \
+	".\inirw.ico"\
+	".\version.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
+	

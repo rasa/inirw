@@ -51,11 +51,6 @@ BSC32=bscmake.exe
 LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386
 # ADD LINK32 binmode.obj setargv.obj kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386
-# Begin Special Build Tool
-TargetPath=.\Release\inirw.exe
-SOURCE="$(InputPath)"
-PostBuild_Cmds=upx $(TargetPath)
-# End Special Build Tool
 
 !ELSEIF  "$(CFG)" == "inirw - Win32 Debug"
 
@@ -98,10 +93,22 @@ SOURCE=.\inirw.cpp
 # Begin Group "Header Files"
 
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\version.h
+# End Source File
 # End Group
 # Begin Group "Resource Files"
 
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\inirw.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\inirw.rc
+# End Source File
 # End Group
 # End Target
 # End Project

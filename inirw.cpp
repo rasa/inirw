@@ -1,5 +1,19 @@
-// $Id$
+/*
 
+$Id$
+
+Copyright (c) 2005-2006 Ross Smith II (http://smithii.com). All rights reserved.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of version 2 of the GNU General Public License
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+*/
 
 // Read and write .ini files
 // Copyright (c) 2004, Ross Smith. All Rights Reserved
@@ -10,6 +24,12 @@
 
 #include <string>		// string
 #include <stdarg.h>		// va_start
+
+#include "version.h"
+
+#define APPNAME			VER_INTERNAL_NAME
+#define APPVERSION		VER_STRING2
+#define APPCOPYRIGHT	VER_LEGAL_COPYRIGHT
 
 void error(char *fmt, ...)
 {
