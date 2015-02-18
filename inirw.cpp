@@ -22,9 +22,13 @@ General Public License for more details.
 // inirw -v | --verbose
 // inirw -h | --help
 
+#ifdef _MSC_VER
+#pragma warning(disable:4996)
+#endif
+
 #include <string>		// string
 #include <stdarg.h>		// va_start
-
+#include <errno.h>
 #include "version.h"
 
 #define APPNAME			VER_INTERNAL_NAME
