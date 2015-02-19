@@ -1,10 +1,10 @@
 all:
-	$(MAKE)/f inirw.mak CFG="inirw - Win32 Release"	all
-	$(MAKE)/f inirw.mak CFG="inirw - Win32 Debug"		all
+	$(MAKE) /f inirw.mak CFG="inirw - Win32 Release"	all
+	$(MAKE) /f inirw.mak CFG="inirw - Win32 Debug"		all
 
 clean:
-	$(MAKE)/f inirw.mak CFG="inirw - Win32 Release"	clean
-	$(MAKE)/f inirw.mak CFG="inirw - Win32 Debug"	clean
+	$(MAKE) /f inirw.mak CFG="inirw - Win32 Release"	clean
+	$(MAKE) /f inirw.mak CFG="inirw - Win32 Debug"		clean
 
 realclean: clean
 	-cmd /c del /s *.bak
